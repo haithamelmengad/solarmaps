@@ -1,0 +1,35 @@
+{
+  "name": "solarmaps",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "npm run server | open http://localhost:3000",
+    "server": "nodemon ./backend/server.js --exec babel-node --presets es2015",
+    "babel": "babel --presets es2015 ./public/app.js -o ./public/app.bundle.js",
+    "webpack": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/haithamelmengad/solarmaps.git"
+  },
+  "author": "haithamelmengad",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/haithamelmengad/solarmaps/issues"
+  },
+  "homepage": "https://github.com/haithamelmengad/solarmaps#readme",
+  "dependencies": {
+    "babel-preset-react": "^6.24.1",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.4",
+    "babel-preset-es2015": "^6.24.1",
+    "http-server": "^0.11.1",
+    "nodemon": "^1.17.2",
+    "webpack": "^3.11.0"
+  }
+}
