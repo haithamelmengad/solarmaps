@@ -9,8 +9,17 @@
 
 </head>
 <body>
-<div id="map"></div>
-<input id="pac-input" class="controls" type="text" placeholder="Search Box">
+<div class="container" style="display:flex">
+  <span id="section">
+  <h3> Welcome to <strong> Mapdokay! </strong> </h3>
+  <p>  To begin, please enter an adress to make your solar assessment</p>
+  </span>
+  <div>
+    <div id="map"></div>
+    <input id="pac-input" class="controls" type="text" placeholder="Search Box">
+  </div>
+</div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="app.js"></script>
     </script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCroRdUBvef1285W3mySGEq3pFCo_DbNsk&callback=initMap&libraries=drawing,places"></script>
